@@ -31,3 +31,4 @@ class Solution(object):
                 return hashMap[diff], i
             # appends (ith element, ith index) to the hashMap
             hashMap[n] = i
+
