@@ -2,24 +2,11 @@ Q. Given an array of integers nums and an integer target, return indices of the 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 
-
-nums=[]
-target=int(input("What is the value for target"))
-n=int(input("Number of elements in the array"))
-for i in range(0,n):
-    l=int(input())
-    nums.append(l)
-print(nums)
-for x in nums:
-    for y in nums:
-     if x+y == target:
-      return (nums.index(x), nums.index(y))
-        
-        
         
 class Solution(object):
+# self refres to the class object itself, so basically self helps access attributes and methods of the class
     def twoSum(self, nums, target):
-        # generate hashmap
+        # generate hashmap, here it is nothing but dictionary and the syntax to define it is name={}
         hashMap = {}
         # enumerate() - returns (ith place, ith element)
         for i, n in enumerate(nums):
