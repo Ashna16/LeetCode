@@ -8,7 +8,7 @@ class Solution(object):
     def twoSum(self, nums, target):
         # generate hashmap, here it is nothing but dictionary and the syntax to define it is name={}
         hashMap = {}
-        # enumerate() - returns (ith place, ith element)
+        # enumerate() - returns (ith place, ith element)- enumerate means traversing from one end to another,so here enumerating through the nums.
         for i, n in enumerate(nums):
             # result will be the other number algorithm is finding
             diff = target - n
