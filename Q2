@@ -9,7 +9,7 @@ Explanation: 342 + 465 = 807.
 Answer-
 
 class ListNode:
-    def __init__(self, val, next_node=None, prev_node=None):
+    def __init__(self, val, next_node=None):
         self.val = val
         self.next = next_node
  class Solution:
