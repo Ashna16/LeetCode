@@ -1,0 +1,25 @@
+ Q. Given an integer x, return true if x is a palindrome, and false otherwise.
+
+#include <stdio.h>
+
+bool isPalindrome(int x) {
+  if (x < 0) {
+    printf("False");
+    return 0;
+  }
+  int temp = x;
+  unsigned int reverse = 0;
+  while (temp != 0) {
+    reverse = reverse * 10 + temp % 10;
+    temp /= 10;
+  }
+  if (reverse == x) {
+    printf("True");
+    return 1;
+  } else {
+    printf("False");
+    return 0;
+  }
+}
+
+/* Note,use reversal logic which is rev= rev * 10 + temp%10; tem= temp/10;
